@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Header from '../Header/Header.jsx';
 import s from './Welcome.module.css';
 import { GoArrowRight } from "react-icons/go";
+
 const Welcome = () => {
   const [isStart, setStart] = useState(false);
 
@@ -11,18 +12,19 @@ const Welcome = () => {
 
   return (
     <>
-      {isStart ? (
-        <Header />
-      ) : (
+      {isStart && <Header />}
+
+      {!isStart && (
         <div className={s.container}>
           <div className={s.welcome}>
-            <h2>Welcome to my portfolio 🦹</h2>
+            <h2 className={s.begin}>Welcome to my portfolio 🦹</h2>
           </div>
           <div className={s.some_words}>
             <div className={s.content}>
-              <p>I am so happy to see you here</p>
-              <p>Now you will see something about me!</p>
-              <button className={s.btn_welcome} onClick={handleStart}><GoArrowRight size="60px"/>
+              <p className={s.txt}>I am so happy to see you here</p>
+              <p className={s.txt}>Now you will see something about me!</p>
+              <button className={s.btn_welcome} onClick={handleStart}>
+                <GoArrowRight size="60px" fill="black" />
               </button>
             </div>
           </div>
