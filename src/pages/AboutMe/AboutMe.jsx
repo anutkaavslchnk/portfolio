@@ -6,7 +6,7 @@ const AboutMe = () => {
     <main>
       <section className={s.first_section}>
         <div className={s.imgcont}>
-          <img src="/img/main.jpeg" alt="my-photo" className={s.photo} />
+        <img src='/img/main.jpeg' alt="my-photo" className={s.photo} />
         </div>
         <div className={s.int}>
           <h2 className={s.name}>
@@ -19,8 +19,8 @@ const AboutMe = () => {
             to see you here in my portfolio.
           </p>
           <a href="/img/Anna_Vasylchenko_FronendDev.pdf" download className={s.btn}>
-            Download Resume
-          </a>
+  Download Resume
+</a>
         </div>
       </section>
 
