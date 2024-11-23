@@ -1,4 +1,5 @@
 import s from './AboutMe.module.css';
+import photoMy from '/public/main.jpeg';
 console.log(s);
 
 const AboutMe = () => {
@@ -6,7 +7,7 @@ const AboutMe = () => {
     <main>
       <section className={s.first_section}>
         <div className={s.imgcont}>
-        <img src='public/main.jpeg' alt="my-photo" className={s.photo} />
+        <img src={photoMy} alt="my-photo" className={s.photo} />
         </div>
         <div className={s.int}>
           <h2 className={s.name}>
