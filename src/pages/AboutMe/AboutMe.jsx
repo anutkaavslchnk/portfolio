@@ -6,7 +6,7 @@ const AboutMe = () => {
     <main>
       <section className={s.first_section}>
         <div className={s.imgcont}>
-        <img src='/img/main.jpeg' alt="my-photo" className={s.photo} />
+        <img src='/public/main.jpeg' alt="my-photo" className={s.photo} />
         </div>
         <div className={s.int}>
           <h2 className={s.name}>
@@ -18,7 +18,7 @@ const AboutMe = () => {
             I'm a front-end developer with knowledge of HTML, CSS, Javascript, React, Typescript and Node.js. I am so glad
             to see you here in my portfolio.
           </p>
-          <a href="/img/Anna_Vasylchenko_FronendDev.pdf" download className={s.btn}>
+          <a href="/public/Anna_Vasylchenko_FronendDev.pdf" download className={s.btn}>
   Download Resume
 </a>
         </div>
@@ -41,7 +41,7 @@ const AboutMe = () => {
             <p className={s.time}>1 Oct 2024 - Oct 2028 | Computer Science</p>
             <p className={s.degree}>Bachelor's degree</p>
             <div className={s.overlay}>
-              <img className={s.uam_photo} src="/img/HSGHAF29_400x400.jpg" alt="uam" />
+              <img className={s.uam_photo} src="/public/HSGHAF29_400x400.jpg" alt="uam" />
               <a href="https://amu.edu.pl/" target="_blank" className={s.uam_main}>
                 The main website
               </a>
@@ -55,7 +55,7 @@ const AboutMe = () => {
             <p className={s.time}>May 2023 - Nov 2024 | Web development</p>
             <p className={s.degree}>Fullstack web developer</p>
             <div className={s.overlay}>
-              <img className={s.goit_main} src="/img/images.png" alt="goIt" />
+              <img className={s.goit_main} src="/public/images.png" alt="goIt" />
               <a href="https://goit.global/ua/" target="_blank" className={s.goit}>
                 The main website
               </a>
