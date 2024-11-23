@@ -1,5 +1,8 @@
 import s from './AboutMe.module.css';
 import photoMy from '/public/main.jpeg';
+import resume from '/public/Anna_Vasylchenko_FronendDev.pdf';
+import uam from '/public/HSGHAF29_400x400.jpg';
+import goit from '/public/images.png';
 console.log(s);
 
 const AboutMe = () => {
@@ -19,7 +22,7 @@ const AboutMe = () => {
             I'm a front-end developer with knowledge of HTML, CSS, Javascript, React, Typescript and Node.js. I am so glad
             to see you here in my portfolio.
           </p>
-          <a href="/public/Anna_Vasylchenko_FronendDev.pdf" download className={s.btn}>
+          <a href={resume} download className={s.btn}>
   Download Resume
 </a>
         </div>
@@ -42,7 +45,7 @@ const AboutMe = () => {
             <p className={s.time}>1 Oct 2024 - Oct 2028 | Computer Science</p>
             <p className={s.degree}>Bachelor's degree</p>
             <div className={s.overlay}>
-              <img className={s.uam_photo} src="/public/HSGHAF29_400x400.jpg" alt="uam" />
+              <img className={s.uam_photo} src={uam} alt="uam" />
               <a href="https://amu.edu.pl/" target="_blank" className={s.uam_main}>
                 The main website
               </a>
@@ -56,7 +59,7 @@ const AboutMe = () => {
             <p className={s.time}>May 2023 - Nov 2024 | Web development</p>
             <p className={s.degree}>Fullstack web developer</p>
             <div className={s.overlay}>
-              <img className={s.goit_main} src="/public/images.png" alt="goIt" />
+              <img className={s.goit_main} src={goit} alt="goIt" />
               <a href="https://goit.global/ua/" target="_blank" className={s.goit}>
                 The main website
               </a>
