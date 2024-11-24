@@ -3,6 +3,7 @@ import photoMy from '/public/main.jpeg';
 import resume from '/public/Anna_Vasylchenko_FronendDev.pdf';
 import uam from '/public/HSGHAF29_400x400.jpg';
 import goit from '/public/images.png';
+
 console.log(s);
 
 const AboutMe = () => {
@@ -20,7 +21,7 @@ const AboutMe = () => {
           </h2>
           <p className={s.par}>
             I'm a front-end developer with knowledge of HTML, CSS, Javascript, React, Typescript and Node.js. I am so glad
-            to see you here in my portfolio.
+            to see you here in my portfolio. Here you can see a lot of interesting things about me. I am currently a student at Adam Mickiewicz University. 
           </p>
           <a href={resume} download className={s.btn}>
   Download Resume
@@ -36,6 +37,12 @@ const AboutMe = () => {
             <p className={s.ed_par}>Education</p>
             <p className={s.ed_par}>Education</p>
             <p className={s.ed_par}>Education</p>
+            <p className={s.ed_par}>Education</p>
+            <p className={s.ed_par}>Education</p>
+            <p className={s.ed_par}>Education</p>
+            <p className={s.ed_par}>Education</p>
+            <p className={s.ed_par}>Education</p>
+            <p className={s.ed_par}>Education</p>
           </div>
         </div>
 
@@ -46,9 +53,6 @@ const AboutMe = () => {
             <p className={s.degree}>Bachelor's degree</p>
             <div className={s.overlay}>
               <img className={s.uam_photo} src={uam} alt="uam" />
-              <a href="https://amu.edu.pl/" target="_blank" className={s.uam_main}>
-                The main website
-              </a>
               <a href="https://wmi.amu.edu.pl/" target="_blank" className={s.uam_main}>
                 The WMI website
               </a>
