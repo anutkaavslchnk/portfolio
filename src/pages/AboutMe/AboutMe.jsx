@@ -3,10 +3,18 @@ import photoMy from '/public/main.jpeg';
 import resume from '/public/Anna_Vasylchenko_FronendDev.pdf';
 import uam from '/public/HSGHAF29_400x400.jpg';
 import goit from '/public/images.png';
+import { Link, Outlet } from 'react-router-dom';
+import { useState } from 'react';
 
 console.log(s);
 
 const AboutMe = () => {
+
+  const [showMoreInfo, setShowMoreInfo] = useState(false);
+  const handleMore=()=>{
+    setShowMoreInfo((prevState) => !prevState);
+  }
+
   return (
     <main>
       <section className={s.first_section}>
@@ -23,6 +31,17 @@ const AboutMe = () => {
             I'm a front-end developer with knowledge of HTML, CSS, Javascript, React, Typescript and Node.js. I am so glad
             to see you here in my portfolio. Here you can see a lot of interesting things about me. I am currently a student at Adam Mickiewicz University. 
           </p>
+        <button className={s.moreinfo} onClick={handleMore}>
+          {showMoreInfo ? "Hide" : "More information"}
+        </button>
+{showMoreInfo &&( 
+  <>
+  <Link to='/moreInfo'></Link>
+  <Outlet />
+  </>
+  )
+          }
+        
           <a href={resume} download className={s.btn}>
   Download Resume
 </a>

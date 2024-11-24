@@ -1,4 +1,8 @@
-
+:root{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
 /* FIRST SECTION */
 .first_section{
     padding-top:33px;
@@ -15,9 +19,12 @@
     width:200px;
     height:200px;
     opacity: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     animation: animationTxt 2s ease forwards 3s;
 }
-
+.photo:hover{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
 .name{
 
 color: rgb(33, 36, 61);
@@ -30,7 +37,12 @@ animation: titleAnim 6s ease forwards;
 opacity: 0;
 width:312px;
 
+
 }
+
+
+
+
 .par{
     color: rgb(33, 36, 61);
 font-size: 16px;
@@ -58,38 +70,53 @@ text-decoration: none;
 opacity: 0;
     animation: animationTxt 2s ease forwards 3s;
 }
+
+.btn:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
 .int{
 
     display: flex;
     justify-content: center; 
     flex-direction: column;
     align-items: center;    
-    height: 50vh;
+    height: 100vh;
     gap:20px;
 }
+
+.moreinfo{
+  border:none;
+  background-color: transparent;
+  cursor:pointer;
+  color:inherit;
+  font-weight: 700;
+  animation: animationTxt 2s ease forwards 3s;
+}
+.moreinfo:hover{
+  text-decoration: underline;
+}
+
 @keyframes animationTxt {
-    from {
-      opacity: 0;
-      transform: translateY(40%);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0%);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(50%);
   }
-   
-  @keyframes titleAnim {
-    from {
-      opacity: 0;
-      transform: translateY(30%);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(-30%);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
   }
-
-
+}
+ 
+@keyframes titleAnim {
+  from {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-15%);
+  }
+}
   /* SECOND SECTION */
 
   .education_sec{

@@ -7,6 +7,7 @@ import Contact from '../../pages/Contact/Contact.jsx';
 import Projects from '../../pages/Projects/Projects.jsx';
 import NotFound from '../../pages/NotFound/NotFound.jsx';
 import AboutMe from '../../pages/AboutMe/AboutMe.jsx';
+import MoreInfo from '../MoreInfo/MoreInfo.jsx';
 
 
 const Header = () => {
@@ -45,7 +46,9 @@ const Header = () => {
             </nav>
         </div>
         <Routes>
-    <Route path="/" element={<AboutMe/>}></Route>
+    <Route path="/" element={<AboutMe/>}>
+    <Route path="/moreInfo" element={<MoreInfo/>}></Route>
+    </Route>
       <Route path="/projects" element={<Projects/>}></Route>
       <Route path="/contact" element={<Contact/>}></Route>
       <Route path="*" element={<NotFound />} />

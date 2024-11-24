@@ -52,7 +52,7 @@ opacity: 0;
     display:flex;
     justify-content: flex-end;
 padding-right:60px;
-padding-top: 27px;
+padding-top: 50px;
 
 }
 .list{
@@ -81,6 +81,13 @@ padding-top: 27px;
         font-size: 50px;
 
       }
+      .container_tab_desk{
+        display:flex;
+        justify-content: flex-end;
+    padding-right:60px;
+    padding-top: 60px;
+    
+    }
 
 
   }

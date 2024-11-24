@@ -26,7 +26,18 @@ line-height: 29px;
     flex-direction: column;
     padding-top: 80px;
     overflow: auto;
+    animation: scroll-left 1s ease; 
 }
+
+@keyframes scroll-left {
+    from {
+      transform: translateX(100%); 
+    }
+    to {
+      transform: translateX(0); 
+    }
+  }
+
 
 .menu_btn_close{
     background-color: transparent;
