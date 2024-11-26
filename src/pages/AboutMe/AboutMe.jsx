@@ -2,7 +2,7 @@ import s from './AboutMe.module.css';
 import photoMy from '/public/main.jpeg';
 import resume from '/public/Anna_Vasylchenko_FronendDev.pdf';
 import uam from '/public/HSGHAF29_400x400.jpg';
-import goit from '/public/images.png';
+import goit from '/public/preview_main_1200x630.jpg';
 import { Link, Outlet } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -31,16 +31,12 @@ const AboutMe = () => {
             I'm a front-end developer with knowledge of HTML, CSS, Javascript, React, Typescript and Node.js. I am so glad
             to see you here in my portfolio. Here you can see a lot of interesting things about me. I am currently a student at Adam Mickiewicz University. 
           </p>
-        <button className={s.moreinfo} onClick={handleMore}>
-          {showMoreInfo ? "Hide" : "More information"}
-        </button>
-{showMoreInfo &&( 
-  <>
-  <Link to='/moreInfo'></Link>
-  <Outlet />
-  </>
-  )
-          }
+          <Link to={showMoreInfo ? '/' : '/moreInfo'}  className={s.moreinfo} onClick={handleMore}
+>
+  {showMoreInfo ? "Hide" : "More information"}
+</Link>
+<Outlet></Outlet>
+
         
           <a href={resume} download className={s.btn}>
   Download Resume
@@ -89,6 +85,46 @@ const AboutMe = () => {
             </div>
           </li>
         </ul>
+      </section>
+
+      <section className={s.skills_sec}>
+        <div>
+        <p className={s.par_skills}>Skills</p>
+        </div>
+        <div className={s.line}></div>
+<div>
+
+<div className={s.marquee}>
+  <ul className={s.first_line_icons}>
+  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-html-icon'/></svg></li>
+  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-icons8-css-logo'/></svg></li>
+  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-JS'/></svg></li>
+  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-js_react-js_logo_react_react-native_icon'/></svg></li>
+  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-redux'/></svg></li>
+  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-code_development_logo_nodejs_icon'/></svg></li>
+  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-icons8-express-js'/></svg></li>
+  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-mongodb-ar21'/></svg></li>
+  </ul>
+  </div>
+</div>
+<div className={s.line}></div>
+<div>
+<div className={s.marquee_sec}>
+<ul className={s.second_line_icons}>
+  
+    <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-TypeScript'/></svg></li>
+  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-icons8-vite'/></svg></li>
+  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-apple_logo_icon'/></svg></li>
+  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-icons8-git'/></svg></li>
+  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-icons8-github-480'/></svg></li>
+  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-figma-1-logo-svgrepo-com'/></svg></li>
+  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-trello-tile'/></svg></li>
+  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-icons8-visual-studio-code'/></svg></li></ul>
+
+</div>
+</div>
+<div className={s.line}></div>
+
       </section>
     </main>
   );

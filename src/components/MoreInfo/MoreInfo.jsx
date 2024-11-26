@@ -2,7 +2,11 @@ import s from './MoreInfo.module.css';
 
 const MoreInfo = () => {
   return (
-    <div><p className={s.par}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem rerum corrupti recusandae? Consequuntur perspiciatis, voluptatibus dignissimos deserunt hic magni.</p></div>
+    <div>
+      
+      <p className={s.par}>Moreover, I adore of listening the music, i like Rammstein and going to the gym. Also i like reading detective books</p>
+      
+      </div>
   )
   
 };

@@ -27,6 +27,7 @@ line-height: 29px;
     padding-top: 80px;
     overflow: auto;
     animation: scroll-left 1s ease; 
+    
 }
 
 @keyframes scroll-left {
@@ -48,5 +49,5 @@ line-height: 29px;
     top: 24px;
     right: 24px;
     cursor: pointer;
-
 }
+
