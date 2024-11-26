@@ -6,6 +6,7 @@ import goit from '/public/preview_main_1200x630.jpg';
 import { Link, Outlet } from 'react-router-dom';
 import { useState } from 'react';
 // 
+import symbolDefs from '/public/symbol-defs.svg';
 import ts from '/public/symbol-defs.svg#icon-TypeScript';
 
 console.log(s);
@@ -114,7 +115,7 @@ const AboutMe = () => {
 <div className={s.marquee_sec}>
 <ul className={s.second_line_icons}>
   
-    <li><svg className={s.svg}><use href={ts}/></svg></li>
+    <li><svg className={s.svg}><use href={`${symbolDefs}#icon-TypeScript`}/></svg></li>
   <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-icons8-vite'/></svg></li>
   <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-apple_logo_icon'/></svg></li>
   <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-icons8-git'/></svg></li>
