@@ -263,7 +263,8 @@ text-align: left;
     flex-direction: column;
     gap:40px;
     padding-bottom: 50px;
-
+    position: relative; 
+    overflow: hidden;
   }
 
   .first_line_icons{
@@ -281,6 +282,7 @@ list-style-type: none;
       .marquee_sec {
         display: inline-flex; 
         gap: 20px;
+        position: relative;
         animation: scroll-right 10s linear infinite; 
         
       }
