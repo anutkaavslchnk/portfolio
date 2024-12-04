@@ -263,6 +263,7 @@ text-align: left;
     flex-direction: column;
     gap:40px;
     padding-bottom: 50px;
+
   }
 
   .first_line_icons{
@@ -281,6 +282,7 @@ list-style-type: none;
         display: inline-flex; 
         gap: 20px;
         animation: scroll-right 10s linear infinite; 
+        
       }
       @keyframes scroll-right {
         from {

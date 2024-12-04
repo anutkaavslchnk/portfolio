@@ -99,14 +99,14 @@ const AboutMe = () => {
 
 <div className={s.marquee}>
   <ul className={s.first_line_icons}>
-  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-html-icon'/></svg></li>
-  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-icons8-css-logo'/></svg></li>
-  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-JS'/></svg></li>
-  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-js_react-js_logo_react_react-native_icon'/></svg></li>
-  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-redux'/></svg></li>
-  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-code_development_logo_nodejs_icon'/></svg></li>
-  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-icons8-express-js'/></svg></li>
-  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-mongodb-ar21'/></svg></li>
+  <li><svg className={s.svg}><use href={`${symbolDefs}#icon-html-icon`}/></svg></li>
+  <li><svg className={s.svg}><use href={`${symbolDefs}#icon-icons8-css-logo`}/></svg></li>
+  <li><svg className={s.svg}><use href={`${symbolDefs}#icon-JS`}/></svg></li>
+  <li><svg className={s.svg}><use href={`${symbolDefs}#icon-js_react-js_logo_react_react-native_icon`}/></svg></li>
+  <li><svg className={s.svg}><use href={`${symbolDefs}#icon-redux`}/></svg></li>
+  <li><svg className={s.svg}><use href={`${symbolDefs}#icon-code_development_logo_nodejs_icon`}/></svg></li>
+  <li><svg className={s.svg}><use href={`${symbolDefs}#icon-icons8-express-js`}/></svg></li>
+  <li><svg className={s.svg}><use href={`${symbolDefs}#icon-mongodb-ar21`}/></svg></li>
   </ul>
   </div>
 </div>
@@ -116,13 +116,13 @@ const AboutMe = () => {
 <ul className={s.second_line_icons}>
   
     <li><svg className={s.svg}><use href={`${symbolDefs}#icon-TypeScript`}/></svg></li>
-  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-icons8-vite'/></svg></li>
-  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-apple_logo_icon'/></svg></li>
-  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-icons8-git'/></svg></li>
-  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-icons8-github-480'/></svg></li>
-  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-figma-1-logo-svgrepo-com'/></svg></li>
-  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-trello-tile'/></svg></li>
-  <li><svg className={s.svg}><use href='/public/symbol-defs.svg#icon-icons8-visual-studio-code'/></svg></li></ul>
+  <li><svg className={s.svg}><use href={`${symbolDefs}#icon-icons8-vite`}/></svg></li>
+  <li><svg className={s.svg}><use href={`${symbolDefs}#icon-apple_logo_icon`}/></svg></li>
+  <li><svg className={s.svg}><use href={`${symbolDefs}#icon-icons8-git`}/></svg></li>
+  <li><svg className={s.svg}><use href={`${symbolDefs}#icon-icons8-github-480`}/></svg></li>
+  <li><svg className={s.svg}><use href={`${symbolDefs}#icon-figma-1-logo-svgrepo-com`}/></svg></li>
+  <li><svg className={s.svg}><use href={`${symbolDefs}#icon-trello-tile`}/></svg></li>
+  <li><svg className={s.svg}><use href={`${symbolDefs}#icon-icons8-visual-studio-code`}/></svg></li></ul>
 
 </div>
 </div>
