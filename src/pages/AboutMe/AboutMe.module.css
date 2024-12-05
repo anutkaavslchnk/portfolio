@@ -311,6 +311,62 @@ list-style-type: none;
         width:150px;
         height:75px;
       }
+
+      /*------ SECTION BENEFITS----- */
+
+
+    .benefits{
+      padding-top:20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: center;
+    }
+    .title_ben{
+      color: rgb(33, 36, 61);
+      font-size: 40px;
+margin-bottom: 20px;
+    }
+
+    .circle_container {
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      gap: 50px; 
+      margin-bottom: 20px;
+    }
+    
+    .circle {
+      display: flex; 
+      justify-content: center; 
+      align-items: center;
+      font-weight: 900;
+      font-size: 50px;
+      width: 100px;
+      height: 100px;
+      background-color: transparent;
+      border:1px solid grey;
+      border-radius: 50%;
+     
+    }
+    .circle:hover{
+      transform:scale(1.5);
+    }
+    
+ 
+.cont_of_benef_numb{
+  display:flex;
+  justify-content: space-between;
+}
+.list_of_benef{
+  list-style-type: none;
+gap:130px;
+
+display: flex;
+flex-direction: column;
+}
+
+
+
 /*------- Media responsive----------*/
 @media screen and (min-width:768px){
     .photo{
@@ -359,6 +415,14 @@ flex-direction:row;
 
 
     }
+
+    .circle {
+      
+      width: 120px;
+      height: 120px;
+      
+     
+    }
       }
       @media screen and (min-width:1158px){
         .item_ed{
@@ -406,5 +470,11 @@ flex-direction:row;
             align-items: flex-start;
             gap:50px; 
         }
-    
+        .circle {
+          
+          width: 140px;
+          height: 140px;
+          
+         
+        }
       }

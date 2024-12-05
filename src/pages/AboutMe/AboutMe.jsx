@@ -129,6 +129,27 @@ const AboutMe = () => {
 <div className={s.line}></div>
 
       </section>
+
+      <section className={s.benefits}>
+        <h2 className={s.title_ben}>Benefits of working with me</h2>
+        <div className={s.cont_of_benef_numb}>
+        <div className={s.circle_container}>
+  <div className={s.circle}>1</div>
+  <div className={s.circle}>2</div>
+  <div className={s.circle}>3</div>
+</div>
+
+<div>
+
+  <ul className={s.list_of_benef}>
+    <li className={s.items}>I like communicating</li>
+  <li className={s.items}>I am disciplined</li>
+  <li className={s.items}>I win deadlines</li>
+  </ul>
+</div>
+        </div>
+       
+      </section>
     </main>
   );
 };
