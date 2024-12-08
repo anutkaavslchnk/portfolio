@@ -8,6 +8,7 @@ import { useState } from 'react';
 // 
 import symbolDefs from '/public/symbol-defs.svg';
 import ts from '/public/symbol-defs.svg#icon-TypeScript';
+import { GoArrowRight } from 'react-icons/go';
 
 console.log(s);
 
@@ -137,14 +138,25 @@ const AboutMe = () => {
   <div className={s.circle}>1</div>
   <div className={s.circle}>2</div>
   <div className={s.circle}>3</div>
+  <div className={s.circle}>4</div>
+  <div className={s.circle}>5</div>
 </div>
 
+<div className={s.list_of_benef_arrows}>
+<GoArrowRight size="60px" fill="black" />
+<GoArrowRight size="60px" fill="black" />
+<GoArrowRight size="60px" fill="black" />
+<GoArrowRight size="60px" fill="black" />
+<GoArrowRight size="60px" fill="black" />
+</div>
 <div>
-
   <ul className={s.list_of_benef}>
-    <li className={s.items}>I like communicating</li>
-  <li className={s.items}>I am disciplined</li>
-  <li className={s.items}>I win deadlines</li>
+    <li className={s.items}>Strong Communication Skills</li>
+  <li className={s.items}>Reliability and Time Management</li>
+  <li className={s.items}>Problem-Solving Expertise</li>
+  <li className={s.items}>Client-Focused Approach</li>
+  <li className={s.items}>Continuous Learning</li>
+
   </ul>
 </div>
         </div>
