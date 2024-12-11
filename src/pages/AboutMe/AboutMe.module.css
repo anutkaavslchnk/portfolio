@@ -346,7 +346,8 @@ margin-bottom: 40px;
       background-color: transparent;
       border:1px solid grey;
       border-radius: 50%;
-     
+      animation: items 6s ease forwards ;
+      opacity: 0;
     }
     
     
@@ -374,9 +375,35 @@ flex-direction: column;
   border:1px solid grey;
   padding:20px;
   border-radius: 20px;
+  animation: itemsB 4s ease forwards ;
+  opacity: 0;
 }
 
 
+
+
+@keyframes items {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(50%);
+  }
+}
+
+
+@keyframes itemsB {
+  from {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%);
+  }
+}
 /*------- Media responsive----------*/
 @media screen and (min-width:768px){
     .photo{

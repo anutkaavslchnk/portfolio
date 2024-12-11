@@ -142,13 +142,13 @@ const AboutMe = () => {
   <div className={s.circle}>5</div>
 </div>
 
-<div className={s.list_of_benef_arrows}>
+{/* <div className={s.list_of_benef_arrows}>
 <GoArrowRight size="60px" fill="black" />
 <GoArrowRight size="60px" fill="black" />
 <GoArrowRight size="60px" fill="black" />
 <GoArrowRight size="60px" fill="black" />
 <GoArrowRight size="60px" fill="black" />
-</div>
+</div> */}
 <div>
   <ul className={s.list_of_benef}>
     <li className={s.items}>Strong Communication Skills</li>
