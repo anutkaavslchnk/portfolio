@@ -320,6 +320,7 @@ list-style-type: none;
       padding-left: 20px;
       padding-right: 20px;
       text-align: center;
+      margin-bottom: 90px;
     }
     .title_ben{
       color: rgb(33, 36, 61);
@@ -366,6 +367,7 @@ gap:100px;
 
 display: flex;
 flex-direction: column;
+
 }
 
 .list_of_benef_arrows{

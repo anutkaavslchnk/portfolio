@@ -162,6 +162,7 @@ const AboutMe = () => {
         </div>
        
       </section>
+
     </main>
   );
 };
