@@ -4,3 +4,101 @@
 margin-top: 80px;
 text-align: center;
 }
+.img{
+    width:402px;
+    height:190px;
+    border-radius: 6px;
+}
+
+.list{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none;
+    gap:22px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.items{
+    
+    padding:25px;
+    border-radius:8px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+}
+
+.line{
+
+}
+
+.par_f{
+    margin-top: 17px;
+    margin-bottom: 16px;
+    color: rgb(33, 36, 61);
+    font-size: 24px;
+font-weight: 700;
+line-height: 30px;
+}
+.cont{
+   padding-right:18px;
+   padding-left:18px;
+}
+.year{
+    border-radius: 16px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(20, 40, 80);
+    width: 62px;
+    height: 25px;
+    font-size: 16px;
+font-weight: 900;
+
+}
+.cont_txt{
+    display: flex;
+    gap:22px;
+
+
+}
+.type{
+    color: rgb(134, 149, 164);
+
+font-size: 16px;
+font-weight: 400;
+}
+
+.description{
+    margin-top: 24px;
+    width: 344px;
+    color: rgb(33, 36, 61);
+
+font-size: 16px;
+font-weight: 400;
+}
+.listskills{
+    width: 344px;
+    color: rgb(33, 36, 61);
+;
+font-size: 16px;
+font-weight: 400;
+}
+.skills{
+    margin-top: 10px;
+    font-weight: 700;
+}
+.line{
+    margin-top: 17px;
+    width: 339px;
+    border: 1px solid rgb(224, 224, 224);
+}
+@media screen and (min-width:768px){
+
+}
+
+@media screen and (min-width:1158px){
+
+}
