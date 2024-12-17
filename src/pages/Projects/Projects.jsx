@@ -7,10 +7,8 @@ import img5 from '/public/st.png';
 import { useState } from 'react';
 
 const Projects = () => {
-
   const [currentPage, setCurrentPage] = useState(1);
   const [perPage] = useState(3);
-
 
   const projects = [
     {
@@ -60,13 +58,9 @@ const Projects = () => {
     },
   ];
 
-
   const indexOfLastProject = currentPage * perPage;
   const indexOfFirstProject = indexOfLastProject - perPage;
-
-
   const currentProjects = projects.slice(indexOfFirstProject, indexOfLastProject);
-
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
@@ -93,12 +87,11 @@ const Projects = () => {
         ))}
       </ul>
 
-
       <div className={s.pagination}>
         {Array.from({ length: Math.ceil(projects.length / perPage) }, (_, index) => (
           <button
             key={index + 1}
-            className={s.pageButton}
+            className={`${s.pageButton} ${currentPage === index + 1 ? s.active : ''}`}
             onClick={() => paginate(index + 1)}
           >
             {index + 1}
