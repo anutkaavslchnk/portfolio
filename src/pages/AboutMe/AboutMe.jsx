@@ -20,6 +20,7 @@ const AboutMe = () => {
   }
 
   return (
+    <>
     <main>
       <section className={s.first_section}>
         <div className={s.imgcont}>
@@ -70,25 +71,26 @@ const AboutMe = () => {
             <p className={s.title_school}>UNIVERCITY IM. ADAMA MICKIEWICZA IN POZNAN</p>
             <p className={s.time}>1 Oct 2024 - Oct 2028 | Computer Science</p>
             <p className={s.degree}>Bachelor's degree</p>
-            <div className={s.overlay}>
+            {/* <div className={s.overlay}>
               <img className={s.uam_photo} src={uam} alt="uam" />
               <a href="https://wmi.amu.edu.pl/" target="_blank" className={s.uam_main}>
                 The WMI website
               </a>
-            </div>
+            </div> */}
           </li>
           <li className={s.item_ed}>
             <p className={s.title_school}>IT SCHOOL GOIT</p>
             <p className={s.time}>May 2023 - Nov 2024 | Web development</p>
             <p className={s.degree}>Fullstack web developer</p>
-            <div className={s.overlay}>
+            {/* <div className={s.overlay}>
               <img className={s.goit_main} src={goit} alt="goIt" />
               <a href="https://goit.global/ua/" target="_blank" className={s.goit}>
                 The main website
               </a>
-            </div>
+            </div> */}
           </li>
         </ul>
+        
       </section>
 
       <section className={s.skills_sec}>
@@ -161,9 +163,21 @@ const AboutMe = () => {
 </div>
         </div>
        
+
+    
       </section>
 
     </main>
+    <footer>
+
+      <div className={s.footer}>
+
+
+        
+      </div>
+    </footer>
+    </>
+
   );
 };
 
