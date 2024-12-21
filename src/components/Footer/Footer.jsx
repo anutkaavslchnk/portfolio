@@ -23,11 +23,11 @@ const Footer = () => {
   </div>
   <div className={s.cont_contacts}></div>
             <ul className={s.list_contacts}>
-              <li className={s.item_contacts}><a href=""  ><IoLogoGithub className={s.icon_contacts} fill="white" size="40px" /></a></li>
-              <li className={s.item_contacts}><a href="" ><FaLinkedin className={s.icon_contacts} fill="white" size="40px" /></a></li>
-              <li className={s.item_contacts}><a href="" ><FaTelegramPlane className={s.icon_contacts} fill="white" size="40px" /></a></li>
-              <li className={s.item_contacts}><a href=""><BiLogoGmail className={s.icon_contacts} fill="white" size="40px" /></a></li>
-              <li className={s.item_contacts}><a href="" ><BsFillTelephoneFill className={`${s.icon_contacts} ${s.itemlast}`} fill="white" size="30px" /></a></li>
+              <li className={s.item_contacts}><a href="https://github.com/anutkaavslchnk" target="_blank" ><IoLogoGithub className={s.icon_contacts} fill="white" size="40px" /></a></li>
+              <li className={s.item_contacts}><a href="https://www.linkedin.com/in/anna-vasylchenko-093b75282/" target="_blank"><FaLinkedin className={s.icon_contacts} fill="white" size="40px" /></a></li>
+              <li className={s.item_contacts}><a href="https://t.me/annavasylchenko2006" target="_blank"><FaTelegramPlane className={s.icon_contacts} fill="white" size="40px" /></a></li>
+              <li className={s.item_contacts}><a href="mailto: anna.vasylchenko2006@gmail.com" target="_blank"><BiLogoGmail className={s.icon_contacts} fill="white" size="40px" /></a></li>
+              <li className={s.item_contacts}><a href="tel:"  target="_blank" ><BsFillTelephoneFill className={`${s.icon_contacts} ${s.itemlast}`} fill="white" size="30px" /></a></li>
             </ul>
         </div>
       </footer>
