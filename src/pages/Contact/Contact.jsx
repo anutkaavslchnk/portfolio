@@ -12,11 +12,11 @@ const Contact = () => {
   <section className={s.cont}>
   <p className={s.contacts}>Here is my contacts:</p>
   <ul className={s.list}>
-    <li className={s.item}><a href=""  ><IoLogoGithub className={s.icon} fill="black" size="40px" /></a></li>
-    <li className={s.item}><a href="" ><FaLinkedin className={s.icon} fill="black" size="40px" /></a></li>
-    <li className={s.item}><a href="" ><FaTelegramPlane className={s.icon} fill="black" size="40px" /></a></li>
-    <li className={s.item}><a href=""><BiLogoGmail className={s.icon} fill="black" size="40px" /></a></li>
-    <li className={s.item}><a href="" ><BsFillTelephoneFill className={`${s.icon} ${s.itemlast}`} fill="black" size="30px" /></a></li>
+    <li className={s.item}><a href="https://github.com/anutkaavslchnk"  ><IoLogoGithub className={s.icon} fill="black" /></a></li>
+    <li className={s.item}><a href="https://www.linkedin.com/in/anna-vasylchenko-093b75282/" ><FaLinkedin className={s.icon} fill="black"  /></a></li>
+    <li className={s.item}><a href="https://t.me/annavasylchenko2006" ><FaTelegramPlane className={s.icon} fill="black" /></a></li>
+    <li className={s.item}><a href=""><BiLogoGmail className={s.icon} fill="black" /></a></li>
+    <li className={s.item}><a href="" ><BsFillTelephoneFill className={`${s.icon} ${s.itemlast}`} fill="black" /></a></li>
   </ul>
   
   </section>

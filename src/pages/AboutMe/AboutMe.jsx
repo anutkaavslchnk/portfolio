@@ -1,14 +1,18 @@
 import s from './AboutMe.module.css';
 import photoMy from '/public/main.jpeg';
 import resume from '/public/Anna_Vasylchenko_FronendDev.pdf';
-import uam from '/public/HSGHAF29_400x400.jpg';
-import goit from '/public/preview_main_1200x630.jpg';
-import { Link, Outlet } from 'react-router-dom';
+import { Link, NavLink, Outlet } from 'react-router-dom';
 import { useState } from 'react';
 // 
 import symbolDefs from '/public/symbol-defs.svg';
-import ts from '/public/symbol-defs.svg#icon-TypeScript';
-import { GoArrowRight } from 'react-icons/go';
+
+
+import { IoLogoGithub } from "react-icons/io";
+
+import { BiLogoGmail } from 'react-icons/bi';
+import { BsFillTelephoneFill } from 'react-icons/bs';
+import { FaLinkedin, FaTelegramPlane } from 'react-icons/fa';
+import Footer from '../../components/Footer/Footer';
 
 console.log(s);
 
@@ -168,14 +172,8 @@ const AboutMe = () => {
       </section>
 
     </main>
-    <footer>
 
-      <div className={s.footer}>
-
-
-        
-      </div>
-    </footer>
+    <Footer></Footer>
     </>
 
   );

@@ -5,6 +5,7 @@ import img3 from '/public/js.png';
 import img4 from '/public/fr.png';
 import img5 from '/public/st.png';
 import { useState } from 'react';
+import Footer from '../../components/Footer/Footer';
 
 const Projects = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -65,6 +66,7 @@ const Projects = () => {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
+    <>
     <section className={s.cont}>
       <p className={s.title}>My projects</p>
 
@@ -99,6 +101,8 @@ const Projects = () => {
         ))}
       </div>
     </section>
+    <Footer></Footer>
+    </>
   );
 };
 

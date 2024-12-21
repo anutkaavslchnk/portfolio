@@ -2,7 +2,7 @@
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap:35px;
+    gap:20px;
     margin-top: 30px;
 }
 .order{
@@ -17,23 +17,25 @@
     text-align: center;
 }
 .item{
+    position: relative; 
     border-radius:50%;
     border:1px solid black;
-    width:60px;
-    height:60px;
-    position:relative;
+    width:50px;
+    height:50px;
+   
     background-color: black;
 }
 .icon{
-position: absolute;
-top:15%;
-left:15%;
-
+    width:30px;
+height:30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .itemlast{
-    position: absolute;
-top:25%;
-left:25%;
+width:20px;
+height:20px;
 }
 .icon{
     fill:white;
@@ -42,7 +44,25 @@ left:25%;
 
 
 @media screen and (min-width:768px){
-.item{}
+    .item{
+
+        width:60px;
+        height:60px;
+       
+        background-color: black;
+    }
+    .icon{
+        width:40px;
+    height:40px;
+ 
+    }
+    .itemlast{
+    width:30px;
+    height:30px;
+    }
+    .icon{
+        fill:white;
+    }
 }
 
 
