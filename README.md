@@ -1,4 +1,4 @@
-# My portfolio project 🪴
+# My portfolio project 🌷
 
 Welcome to my portfolio! This project showcases my professional experience, skills, and projects I've worked on. It's built to give visitors a seamless experience while exploring what I have to offer.
 
