@@ -84,9 +84,7 @@ const Projects = () => {
                 <p className={s.type}>{project.type}</p>
               </div>
               <p className={s.description}>{project.description}</p>
-              {/* <div className={s.line}></div>
-              <p className={s.skills}>Skills</p>
-              <p className={s.listskills}>{project.skills}</p> */}
+
             </div>
            
           </li>
