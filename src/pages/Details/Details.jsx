@@ -16,7 +16,7 @@ const Details = () => {
     <div className={s.section}>
      
       <div className={s.cont_first}>
-      <button className={s.back} onClick={() => navigate(-1)}><IoReturnDownBack size="40px" /></button>
+      <button className={s.back} onClick={() => navigate(-1)}><IoReturnDownBack fill="black" size="40px" /></button>
       <h1 className={s.title}>{project.title}</h1>
       <img className={s.img} src={project.img} alt={project.title}  />
       </div>

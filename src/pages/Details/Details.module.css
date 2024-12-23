@@ -59,6 +59,11 @@ font-size: 16px;
     display:flex;
     gap:20px;
 }
+.cont_second{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
     @media screen and (min-width:768px){
         .title{
             font-size: 40px;
