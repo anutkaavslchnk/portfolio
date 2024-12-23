@@ -8,6 +8,7 @@ import Projects from '../../pages/Projects/Projects.jsx';
 import NotFound from '../../pages/NotFound/NotFound.jsx';
 import AboutMe from '../../pages/AboutMe/AboutMe.jsx';
 import MoreInfo from '../MoreInfo/MoreInfo.jsx';
+import Details from '../../pages/Details/Details.jsx';
 
 
 const Header = () => {
@@ -50,6 +51,7 @@ const Header = () => {
     <Route path="/moreInfo" element={<MoreInfo/>}></Route>
     </Route>
       <Route path="/projects" element={<Projects/>}></Route>
+      <Route path="/projects/:id" element={<Details />} />
       <Route path="/contact" element={<Contact/>}></Route>
       <Route path="*" element={<NotFound />} />
     </Routes>

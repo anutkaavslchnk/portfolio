@@ -1,0 +1,206 @@
+.title{
+    font-size: 30px;
+    }
+    .section{
+  padding:20px;
+display:flex;
+flex-direction: column;
+gap:20px;
+    }
+    .img{
+        width:300px;
+         height:150px;
+    }
+    .list{
+        font-size:16px;
+        width:300px;
+    }
+.back{
+    background-color: transparent;
+    border:none;
+    width:40px;
+    height: 40px;
+    cursor: pointer;
+}
+.txt{
+    font-size:16px;
+}
+.year{
+    border-radius: 16px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(20, 40, 80);
+    width: 62px;
+    height: 25px;
+    font-size: 16px;
+font-weight: 900;
+
+}
+.type{
+    color: rgb(134, 149, 164);
+
+font-size: 16px;
+font-weight: 400;
+}
+.desc{
+
+    width: 300px;
+    color: rgb(33, 36, 61);
+
+font-size: 16px;
+font-weight: 400;
+}
+
+.skills{
+font-size: 16px;
+    font-weight: 700;
+}
+.cont{
+    display:flex;
+    gap:20px;
+}
+    @media screen and (min-width:768px){
+        .title{
+            font-size: 40px;
+            }
+            .section{
+          padding:40px;
+        display:flex;
+        flex-direction: column;
+        gap:25px;
+            }
+        .back{
+            background-color: transparent;
+            border:none;
+            width:40px;
+            height: 40px;
+            cursor: pointer;
+        }
+        
+        .year{
+            border-radius: 26px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            background-color: rgb(20, 40, 80);
+            width: 70px;
+            height: 30px;
+            font-size: 20px;
+        font-weight: 900;
+        
+        }
+        .type{
+            color: rgb(134, 149, 164);
+        
+        font-size: 20px;
+        font-weight: 400;
+        }
+        .desc{
+        
+            width: 500px;
+            color: rgb(33, 36, 61);
+        
+        font-size: 20px;
+        font-weight: 400;
+        }
+        
+        .skills{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .cont{
+            display:flex;
+            gap:20px;
+        }
+        .txt{
+            font-size: 20px;
+        }
+        .img{
+
+            width:350px;
+            height:220px;
+        }
+        .list{
+            font-size: 20px;
+        }
+        }
+        
+        @media screen and (min-width:1158px){
+            .section{
+                display:flex;
+                gap:50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+            }
+            .cont_first{
+                display:flex;
+                flex-direction: column;
+                gap:20px;
+                
+            }
+            .cont_second{
+                display:flex;
+                flex-direction: column;
+                gap:15px;
+                margin-top: 180px;
+            }
+            .title{
+                font-size: 40px;
+                }
+            .back{
+                background-color: transparent;
+                border:none;
+                width:40px;
+                height: 40px;
+                cursor: pointer;
+            }
+            
+            .year{
+                border-radius: 26px;
+                text-align: center;
+                color: rgb(255, 255, 255);
+                background-color: rgb(20, 40, 80);
+                width: 70px;
+                height: 30px;
+                font-size: 20px;
+            font-weight: 900;
+            
+            }
+            .type{
+                color: rgb(134, 149, 164);
+            
+            font-size: 20px;
+            font-weight: 400;
+            }
+            .desc{
+            
+                width: 800px;
+                color: rgb(33, 36, 61);
+            
+            font-size: 20px;
+            font-weight: 400;
+            }
+            
+            .skills{
+                font-size: 20px;
+                font-weight: 700;
+            }
+            .cont{
+                display:flex;
+                gap:20px;
+            }
+            .txt{
+                font-size: 20px;
+            }
+            .img{
+    
+                width:350px;
+                height:220px;
+            }
+          
+            .list{
+                font-size: 20px;
+                width:800px;
+            }
+        }
+        

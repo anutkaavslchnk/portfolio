@@ -6,7 +6,7 @@
 /* FIRST SECTION */
 .first_section{
     padding-top:33px;
-    padding:33px 24px 58px 24px;
+    padding:33px 24px 88px 24px;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -121,7 +121,7 @@ opacity: 0;
 
   .education_sec{
     background-color:  rgb(237, 247, 250);
-    padding:0 11px 38px 11px;
+    padding:0 11px 88px 11px;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -258,7 +258,7 @@ text-align: left;
   /* SECTION SKILLS */
 
   .skills_sec{
-    padding-top: 50px;
+    padding-top: 150px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -317,7 +317,7 @@ list-style-type: none;
 
 
     .benefits{
-      padding-top:40px;
+      padding-top:150px;
       padding-left: 20px;
       padding-right: 20px;
       text-align: center;
