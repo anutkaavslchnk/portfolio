@@ -1,23 +1,22 @@
 import s from './AboutMe.module.css';
 import photoMy from '/public/main.jpeg';
 import resume from '/public/Anna_Vasylchenko_FronendDev.pdf';
-import { Link, NavLink, Outlet } from 'react-router-dom';
+import { Link,  Outlet } from 'react-router-dom';
 import { useState } from 'react';
 // 
 import symbolDefs from '/public/symbol-defs.svg';
 
 
-import { IoLogoGithub } from "react-icons/io";
-
-import { BiLogoGmail } from 'react-icons/bi';
-import { BsFillTelephoneFill } from 'react-icons/bs';
-import { FaLinkedin, FaTelegramPlane } from 'react-icons/fa';
 import Footer from '../../components/Footer/Footer';
 
 console.log(s);
 
 const AboutMe = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
+  const toggleDarkMode = () => {
+    setIsDarkMode((prevMode) => !prevMode);
+  };
   const [showMoreInfo, setShowMoreInfo] = useState(false);
   const handleMore=()=>{
     setShowMoreInfo((prevState) => !prevState);

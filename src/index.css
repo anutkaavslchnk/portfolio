@@ -24,3 +24,27 @@ img {
   display: block;
   max-width: 100%;
 }
+
+body.dark {
+  background-color: black;
+  color: white;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6,
+body.dark p,
+body.dark a {
+  color: white;
+}
+body.dark li{
+  background-color: black;
+  border:1px solid white;
+}
+.body.dark button{
+  border:1px solid white;
+}
+

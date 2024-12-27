@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import s from './Header.module.css';
 import Modal from '../Modal/Modal.jsx';
 import { NavLink, Route, Routes } from 'react-router-dom';
@@ -9,10 +9,18 @@ import NotFound from '../../pages/NotFound/NotFound.jsx';
 import AboutMe from '../../pages/AboutMe/AboutMe.jsx';
 import MoreInfo from '../MoreInfo/MoreInfo.jsx';
 import Details from '../../pages/Details/Details.jsx';
+import { LuSunMoon } from 'react-icons/lu';
 
 
 const Header = () => {
+// const [theme, setTheme]=useState("light");
+// const toogleTheme=()=>{
+//     setTheme((prev)=>prev==="light"? "dark": "light");
+// }
 
+// useEffect(()=>{
+// document.body.className=theme;
+// },[theme]);
     const [isOpen, setOpen]=useState(false);
 
     const handleClick=()=>{
@@ -27,8 +35,10 @@ const Header = () => {
     <>
 
     <header>
-
+       
+        
         <div className={s.container}>
+        <button className={s.btn_moon} ><LuSunMoon className={s.moon_mobile}  size="40px"/></button>
         <button className={s.btn_header} onClick={handleClick}>
         <div className={s.burger_menu}>
             <div className={s.burder_items}></div>
@@ -38,8 +48,9 @@ const Header = () => {
         </div>
         </button>
         </div>
+        
         <div className={s.container_tab_desk}>
-
+        <button className={s.btn_moon}  ><LuSunMoon className={s.moon} size="40px" /></button>
             <nav className={s.list}>
                 <NavLink to='/' className={s.items}>About me</NavLink>
                 <NavLink to ='/projects'className={s.items}>Projects</NavLink>
