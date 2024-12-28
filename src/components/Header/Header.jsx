@@ -38,7 +38,7 @@ const Header = () => {
        
         
         <div className={s.container}>
-        <button className={s.btn_moon} ><LuSunMoon className={s.moon_mobile}  size="40px"/></button>
+        <button className={s.btn_moon} ><LuSunMoon className={s.moon_mobile} color="black" size="40px"/></button>
         <button className={s.btn_header} onClick={handleClick}>
         <div className={s.burger_menu}>
             <div className={s.burder_items}></div>
@@ -50,7 +50,7 @@ const Header = () => {
         </div>
         
         <div className={s.container_tab_desk}>
-        <button className={s.btn_moon}  ><LuSunMoon className={s.moon} size="40px" /></button>
+        <button className={s.btn_moon}  ><LuSunMoon className={s.moon} color="black" size="40px" /></button>
             <nav className={s.list}>
                 <NavLink to='/' className={s.items}>About me</NavLink>
                 <NavLink to ='/projects'className={s.items}>Projects</NavLink>
