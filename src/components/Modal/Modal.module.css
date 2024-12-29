@@ -40,7 +40,7 @@ line-height: 29px;
   color:white;
 }
 .dark .menu_btn_close{
- background-color:white;
+  background-color: #fff;
 }
 
 @keyframes scroll-left {

@@ -14,13 +14,16 @@
     background-color: #fff;
     color: black;
 }
-.dark .arrow,
+
 .dark .github,
 .dark .site{
     background-color: #fff;
 }
 .dark  .section{
 background-color: black;;
+}
+.dark .arrow{
+stroke:white
 }
 .title{
     font-size: 30px;
