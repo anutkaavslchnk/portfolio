@@ -1,3 +1,27 @@
+
+/* DARK MODE */
+.dark{
+    background-color: black;
+}
+.dark .title,
+.dark .txt,
+.dark .desc,
+.dark .skills,
+.dark .list{
+    color:white;
+}
+.dark .year{
+    background-color: #fff;
+    color: black;
+}
+.dark .arrow,
+.dark .github,
+.dark .site{
+    background-color: #fff;
+}
+.dark  .section{
+background-color: black;;
+}
 .title{
     font-size: 30px;
     }

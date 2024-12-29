@@ -2,21 +2,18 @@ import s from './AboutMe.module.css';
 import photoMy from '/public/main.jpeg';
 import resume from '/public/Anna_Vasylchenko_FronendDev.pdf';
 import { Link,  Outlet } from 'react-router-dom';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 // 
 import symbolDefs from '/public/symbol-defs.svg';
 
 
 import Footer from '../../components/Footer/Footer';
+import { ThemeContext } from '../../components/Header/Header.jsx';
 
 console.log(s);
 
 const AboutMe = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  const toggleDarkMode = () => {
-    setIsDarkMode((prevMode) => !prevMode);
-  };
+  const { theme } = useContext(ThemeContext);
   const [showMoreInfo, setShowMoreInfo] = useState(false);
   const handleMore=()=>{
     setShowMoreInfo((prevState) => !prevState);
@@ -24,7 +21,7 @@ const AboutMe = () => {
 
   return (
     <>
-    <main>
+    <main className={theme === 'dark' ? s.dark : s.light}>
       <section className={s.first_section}>
         <div className={s.imgcont}>
         <img src={photoMy} alt="my-photo" className={s.photo} />
@@ -74,25 +71,34 @@ const AboutMe = () => {
             <p className={s.title_school}>UNIVERCITY IM. ADAMA MICKIEWICZA IN POZNAN</p>
             <p className={s.time}>1 Oct 2024 - Oct 2028 | Computer Science</p>
             <p className={s.degree}>Bachelor's degree</p>
-            {/* <div className={s.overlay}>
-              <img className={s.uam_photo} src={uam} alt="uam" />
-              <a href="https://wmi.amu.edu.pl/" target="_blank" className={s.uam_main}>
-                The WMI website
-              </a>
-            </div> */}
+
           </li>
           <li className={s.item_ed}>
             <p className={s.title_school}>IT SCHOOL GOIT</p>
             <p className={s.time}>May 2023 - Nov 2024 | Web development</p>
             <p className={s.degree}>Fullstack web developer</p>
-            {/* <div className={s.overlay}>
-              <img className={s.goit_main} src={goit} alt="goIt" />
-              <a href="https://goit.global/ua/" target="_blank" className={s.goit}>
-                The main website
-              </a>
-            </div> */}
+
           </li>
         </ul>
+        <div className={s.additional_info}>
+
+
+        <div className={s.cont_edu}>
+          <div className={s.marquee}>
+            <p className={s.ed_par}>Education</p>
+            <p className={s.ed_par}>Education</p>
+            <p className={s.ed_par}>Education</p>
+            <p className={s.ed_par}>Education</p>
+            <p className={s.ed_par}>Education</p>
+            <p className={s.ed_par}>Education</p>
+            <p className={s.ed_par}>Education</p>
+            <p className={s.ed_par}>Education</p>
+            <p className={s.ed_par}>Education</p>
+            <p className={s.ed_par}>Education</p>
+            <p className={s.ed_par}>Education</p>
+          </div>
+        </div>
+        </div>
         
       </section>
 
@@ -101,7 +107,7 @@ const AboutMe = () => {
         <p className={s.par_skills}>Skills</p>
         </div>
         <div className={s.line}></div>
-<div>
+<div className={s.cont_skills_white}>
 
 <div className={s.marquee}>
   <ul className={s.first_line_icons}>
@@ -117,7 +123,7 @@ const AboutMe = () => {
   </div>
 </div>
 <div className={s.line}></div>
-<div>
+<div className={s.cont_skills_white}>
 <div className={s.marquee_sec}>
 <ul className={s.second_line_icons}>
   

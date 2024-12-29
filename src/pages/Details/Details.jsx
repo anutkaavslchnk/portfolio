@@ -4,19 +4,23 @@ import s from './Details.module.css';
 import { IoReturnDownBack } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineLightningBolt } from "react-icons/hi";
+import { useContext } from "react";
+import { ThemeContext } from "../../components/Header/Header.jsx";
 const Details = () => {
   const { id } = useParams();
   const project = data.find((proj) => proj.id === parseInt(id));
   const navigate = useNavigate();
+  const {theme}=useContext(ThemeContext);
   if (!project) {
     return <p>Project not found</p>;
   }
 
   return (
+    <div className={theme === 'dark' ? s.dark :''}>
     <div className={s.section}>
      
       <div className={s.cont_first}>
-      <button className={s.back} onClick={() => navigate(-1)}><IoReturnDownBack color="black" size="40px" /></button>
+      <button className={s.back} onClick={() => navigate(-1)}><IoReturnDownBack color="black" size="40px" className={s.arrow} /></button>
       <h1 className={s.title}>{project.title}</h1>
       <img className={s.img} src={project.img} alt={project.title}  />
       </div>
@@ -38,6 +42,7 @@ const Details = () => {
       </div>
      
 
+    </div>
     </div>
   );
 };

@@ -2,9 +2,11 @@
 import { NavLink } from 'react-router-dom';
 import s from './Modal.module.css'
 import { GoX } from "react-icons/go";
+import { useContext } from 'react';
+import { ThemeContext } from '../Header/Header';
 const Modal = ({close}) => {
 
-  
+  const {theme}=useContext(ThemeContext);
 
 
 
@@ -12,6 +14,7 @@ const Modal = ({close}) => {
   <>
   {close && (
 
+<div className={theme === 'dark' ? s.dark : ''}>
 
 <div className={s.is_hidden}>
 
@@ -27,7 +30,7 @@ const Modal = ({close}) => {
 </nav>
 </div>
 </div>
-
+</div>
   )}
 
   </>

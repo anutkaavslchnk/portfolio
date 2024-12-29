@@ -1,3 +1,10 @@
+/* DARK MODE */
+.dark .line{
+  border:1px solid white;
+  width:100%;
+  display: block;
+}
+
 .cont_footer{
 
     display:flex;
@@ -14,15 +21,9 @@
   
     
   }
-  .cont_logo{
-  
-  }
-  .cont_nav{
-  
-  }
-  .cont_contacts{
-  
-  }
+.line{
+  display: none;
+}
   .footer_title{
     color:white;
     font-weight: 900;

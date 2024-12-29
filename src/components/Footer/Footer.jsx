@@ -4,9 +4,14 @@ import { IoLogoGithub } from 'react-icons/io';
 import { FaLinkedin, FaTelegramPlane } from 'react-icons/fa';
 import { BiLogoGmail } from 'react-icons/bi';
 import { BsFillTelephoneFill } from 'react-icons/bs';
+import { ThemeContext } from '../Header/Header';
+import { useContext } from 'react';
 
 const Footer = () => {
+  const {theme}=useContext(ThemeContext);
   return (
+    <div className={theme=="dark"? s.dark : ''}>
+      <div className={s.line}></div>
   <footer className={s.footer}>
   
         <div className={s.cont_footer}>
@@ -30,7 +35,10 @@ const Footer = () => {
               <li className={s.item_contacts}><a href="tel:"  target="_blank" ><BsFillTelephoneFill className={`${s.icon_contacts} ${s.itemlast}`} fill="white" size="30px" /></a></li>
             </ul>
         </div>
+      
       </footer>
+      <div className={s.line}></div>
+      </div>
 )
 };
 

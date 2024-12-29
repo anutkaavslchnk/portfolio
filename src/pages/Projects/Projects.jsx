@@ -4,14 +4,15 @@ import img2 from '/public/fb2.png';
 import img3 from '/public/js.png';
 import img4 from '/public/fr.png';
 import img5 from '/public/st.png';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom'; 
 import Footer from '../../components/Footer/Footer';
+import { ThemeContext } from '../../components/Header/Header';
 
 const Projects = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [perPage] = useState(3);
-
+const {theme}=useContext(ThemeContext);
   const projects = [
     {
       id: 1,
@@ -67,7 +68,7 @@ const Projects = () => {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <>
+    <div className={theme=="dark"? s.dark : ''}>
     <section className={s.cont}>
       <p className={s.title}>My projects</p>
 
@@ -104,7 +105,7 @@ const Projects = () => {
       </div>
     </section>
     <Footer></Footer>
-    </>
+    </div>
   );
 };
 

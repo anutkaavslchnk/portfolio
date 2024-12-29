@@ -1,3 +1,26 @@
+/* DARK MODE */
+.dark .title,
+.dark .par_f,
+.dark .description{
+    color: white;;
+}
+.dark .items{
+   border:2px solid white;
+   box-shadow: none;
+}
+.dark .items:hover{
+    border:2px solid white;
+
+ }
+ .dark .year{
+    background-color: #fff;
+    color: black;
+ }
+.dark .pageButton{
+    background-color: black;
+    color: #fff;
+    border: 2px solid white;
+}
 .title{
     color: rgb(33, 36, 61);
     font-size: 40px;
@@ -5,6 +28,10 @@
 margin-top: 80px;
 margin-bottom: 40px;
 text-align: center;
+}
+.dark .active{
+    background-color: white;
+    color:black;
 }
 .img{
     width:300px;

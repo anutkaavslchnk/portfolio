@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { createContext, useEffect, useState } from 'react';
 import s from './Header.module.css';
 import Modal from '../Modal/Modal.jsx';
 import { NavLink, Route, Routes } from 'react-router-dom';
@@ -10,17 +10,29 @@ import AboutMe from '../../pages/AboutMe/AboutMe.jsx';
 import MoreInfo from '../MoreInfo/MoreInfo.jsx';
 import Details from '../../pages/Details/Details.jsx';
 import { LuSunMoon } from 'react-icons/lu';
+export const ThemeContext=createContext();
 
 
 const Header = () => {
-// const [theme, setTheme]=useState("light");
-// const toogleTheme=()=>{
-//     setTheme((prev)=>prev==="light"? "dark": "light");
-// }
 
-// useEffect(()=>{
-// document.body.className=theme;
-// },[theme]);
+
+
+const [theme, setTheme]=useState('light');
+
+
+    const ToogleTheme=()=>{
+setTheme((curr)=>curr==="light"? "dark": "light");
+    }
+
+    useEffect(() => {
+        localStorage.setItem("theme", theme);
+      }, [theme]);
+
+      useEffect(() => {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme) setTheme(savedTheme);
+      }, []);
+      
     const [isOpen, setOpen]=useState(false);
 
     const handleClick=()=>{
@@ -32,13 +44,14 @@ const Header = () => {
     }
 
   return (
-    <>
+    <ThemeContext.Provider value={{theme, ToogleTheme}}>
 
-    <header>
+<header className={`${s.header} ${theme === 'dark' ? s.dark : ''}`}>
+
        
         
         <div className={s.container}>
-        <button className={s.btn_moon} ><LuSunMoon className={s.moon_mobile} color="black" size="40px"/></button>
+        <button className={s.btn_moon} onClick={ToogleTheme} ><LuSunMoon className={s.moon_mobile} color="black" size="40px"/></button>
         <button className={s.btn_header} onClick={handleClick}>
         <div className={s.burger_menu}>
             <div className={s.burder_items}></div>
@@ -50,7 +63,7 @@ const Header = () => {
         </div>
         
         <div className={s.container_tab_desk}>
-        <button className={s.btn_moon}  ><LuSunMoon className={s.moon} color="black" size="40px" /></button>
+        <button className={s.btn_moon} onClick={ToogleTheme}  ><LuSunMoon className={s.moon} color="black" size="40px" /></button>
             <nav className={s.list}>
                 <NavLink to='/' className={s.items}>About me</NavLink>
                 <NavLink to ='/projects'className={s.items}>Projects</NavLink>
@@ -71,7 +84,7 @@ const Header = () => {
 {isOpen && <Modal close={handleClose}></Modal> }
 
   </header>
-  </>
+  </ThemeContext.Provider>
   )
 };
 

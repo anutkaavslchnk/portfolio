@@ -3,6 +3,43 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+.additional_info{
+  display:none;
+}
+/* DARK MODE */
+
+.dark .line{
+  border:none;
+}
+.dark .cont_skills_white{
+  background-color: white;
+  padding:20px 0;
+}
+.dark .par,
+.dark .name,
+.dark .par_skills,
+.dark .title_ben,
+.dark .circle,
+.dark .items,
+.dark .moreinfo
+{
+  color: white;
+}
+.dark .btn{
+  background-color: white;
+  color:black;
+  
+}
+.dark .additional_info{
+display: flex;
+}
+.dark .cont_edu{
+background-color: #fff;
+}
+.dark .education_sec{
+  background-color: black;
+}
 /* FIRST SECTION */
 .first_section{
     padding-top:33px;
