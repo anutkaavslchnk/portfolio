@@ -39,8 +39,11 @@ line-height: 29px;
 .dark .items{
   color:white;
 }
-.dark .menu_btn_close{
+/* .dark .menu_btn_close{
   background-color: #fff;
+} */
+.dark .cl_m{
+  fill:white;
 }
 
 @keyframes scroll-left {

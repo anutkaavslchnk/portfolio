@@ -6,9 +6,13 @@ import { IoLogoGithub } from "react-icons/io";
 
 import { BiLogoGmail } from 'react-icons/bi';
 import { BsFillTelephoneFill } from 'react-icons/bs';
+import { useContext } from 'react';
+import { ThemeContext } from '../../components/Header/Header';
 
 const Contact = () => {
+  const {theme}=useContext(ThemeContext);
   return (
+    <div className={theme === 'dark' ? s.dark : ''}>
   <section className={s.cont}>
   <p className={s.contacts}>Here is my contacts:</p>
   <ul className={s.list}>
@@ -20,6 +24,7 @@ const Contact = () => {
   </ul>
   
   </section>
+  </div>
   )
 };
 

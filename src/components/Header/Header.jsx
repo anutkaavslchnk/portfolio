@@ -51,7 +51,7 @@ setTheme((curr)=>curr==="light"? "dark": "light");
        
         
         <div className={s.container}>
-        <button className={s.btn_moon} onClick={ToogleTheme} ><LuSunMoon className={s.moon_mobile} fill="black" size="40px"/></button>
+        <button className={s.btn_moon} onClick={ToogleTheme} ><LuSunMoon className={s.moon_mobile} color="black" size="40px"/></button>
         <button className={s.btn_header} onClick={handleClick}>
         <div className={s.burger_menu}>
             <div className={s.burder_items}></div>

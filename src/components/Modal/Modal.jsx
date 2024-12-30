@@ -18,7 +18,7 @@ const Modal = ({close}) => {
 
 <div className={s.is_hidden}>
 
-<button type="button" className={s.menu_btn_close} onClick={close}><GoX className={s.cl_m} fill="black" size="30px"/>
+<button type="button" className={s.menu_btn_close} onClick={close}><GoX className={s.cl_m} color="black" size="30px"/>
 </button>
 
 <div>
