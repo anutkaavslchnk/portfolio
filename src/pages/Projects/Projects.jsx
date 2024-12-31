@@ -21,7 +21,7 @@ const {theme}=useContext(ThemeContext);
       year: '2024',
       type: 'Web app',
       description: 'A team project. An app that will help you plan your day...',
-      skills: '·React.js ·Node.js ·MongoDB ·JavaScript ·HTML6 ·CSS ·Vite ·Render ·Redux ·REST API',
+      skills: '·React.js ·Node.js ·MongoDB ·Vite ·Render ·Redux ·REST API',
     },
     {
       id: 2,
@@ -30,7 +30,7 @@ const {theme}=useContext(ThemeContext);
       year: '2024',
       type: 'Web app',
       description: 'In this web application, you will have the opportunity to create your own account in the contact book...',
-      skills: '·HTML5 ·CSS3 ·JavaScript ·React.js ·Node.js ·Redux ·Axios ·Vite',
+      skills: '·React.js ·Node.js ·Redux ·Axios ·Vite ·TypeScript',
     },
     {
       id: 3,

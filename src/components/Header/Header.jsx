@@ -74,8 +74,9 @@ setTheme((curr)=>curr==="light"? "dark": "light");
     <Route path="/" element={<AboutMe/>}>
     <Route path="/moreInfo" element={<MoreInfo/>}></Route>
     </Route>
+    
       <Route path="/projects" element={<Projects/>}></Route>
-      <Route path="/projects/:id" element={<Details />} />
+      <Route path="/projects/:id" element={<Details />}></Route>
       <Route path="/contact" element={<Contact/>}></Route>
       <Route path="*" element={<NotFound />} />
     </Routes>

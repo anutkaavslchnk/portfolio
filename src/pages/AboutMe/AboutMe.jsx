@@ -30,11 +30,10 @@ const AboutMe = () => {
           <h2 className={s.name}>
             Hi, I am Anna,
             <br />
-            Motivated Web developer
+            Fullstack Web Developer
           </h2>
           <p className={s.par}>
-            I'm a front-end developer with knowledge of HTML, CSS, Javascript, React, Typescript and Node.js. I am so glad
-            to see you here in my portfolio. Here you can see a lot of interesting things about me. I am currently a student at Adam Mickiewicz University. 
+            I'm a fullstack web developer with knowledge of HTML, CSS, Javascript, React, Typescript and Node.js. I am currently a student at Adam Mickiewicz University. 
           </p>
           <Link to={showMoreInfo ? '/' : '/moreInfo'}  className={s.moreinfo} onClick={handleMore}
 >

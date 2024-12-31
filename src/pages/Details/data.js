@@ -12,7 +12,7 @@ const projectsData = [
     year: '2024',
     type: 'Web app',
     description: 'A team project. An app that will help you plan your day. This is a full-stack application. I wrote the code for the backend part of authorization and authentication',
-    skills: '·React.js ·Node.js ·MongoDB ·JavaScript ·HTML6 ·CSS ·Vite ·Render ·Redux ·REST API',
+    skills: '·React.js ·Node.js ·MongoDB  ·Vite ·Render ·Redux ·REST API',
     github:"https://github.com/maksymPr424/Task-Pro-back",
     site:"https://task-pro-nu.vercel.app/welcome"
   },
@@ -23,7 +23,7 @@ const projectsData = [
     year: '2024',
     type: 'Web app',
     description: 'In this web application, you will have the opportunity to create your own account in the contact book, where you can add new contacts, delete them, and search by number and name. Individual project',
-    skills: '·HTML5 ·CSS3 ·JavaScript ·React.js ·Node.js ·Redux ·Axios ·Vite',
+    skills: '·React.js ·Node.js ·Redux ·Axios ·Vite',
       github:"https://github.com/anutkaavslchnk/Phone-book-app",
     site:"https://goit-react-hw-08-black-chi.vercel.app/"
   },
@@ -56,7 +56,7 @@ const projectsData = [
     year: '2023',
     type: 'Web app',
     description: 'The website of the web studio is adapted for all types of devices and includes modal windows, a responsive design, effects and transitions.',
-    skills: '·HTML5 ·CSS3 ·JavaScript',
+    skills: ['·HTML5 ·CSS3 ·JavaScript'],
       github:"https://github.com/anutkaavslchnk/Web-Studio",
     site:"https://anutkaavslchnk.github.io/Web-Studio/",
   

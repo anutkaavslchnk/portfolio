@@ -6,6 +6,7 @@ import { BiLogoGmail } from 'react-icons/bi';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { ThemeContext } from '../Header/Header';
 import { useContext } from 'react';
+import { PiCopyrightLight } from 'react-icons/pi';
 
 const Footer = () => {
   const {theme}=useContext(ThemeContext);
@@ -35,7 +36,11 @@ const Footer = () => {
               <li className={s.item_contacts}><a href="tel:"  target="_blank" ><BsFillTelephoneFill className={`${s.icon_contacts} ${s.itemlast}`} fill="white" size="30px" /></a></li>
             </ul>
         </div>
-      
+      <div className={s.cont_lows}>
+      <PiCopyrightLight color="grey" size="20px"/>
+        <p className={s.title_lows}>2024</p>
+        <p className={s.title_lows}>All Rights Reserved.</p>
+      </div>
       </footer>
       <div className={s.line}></div>
       </div>

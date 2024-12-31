@@ -21,6 +21,18 @@
   
     
   }
+  .cont_lows{
+    display:flex;
+    justify-content: end;
+    gap:8px;
+    align-items: center;
+    margin-right: 10px;
+   
+  }
+  .title_lows{
+    font-size: 16px;
+    color:grey;
+  }
 .line{
   display: none;
 }
@@ -79,7 +91,16 @@
       
       }
 
-
+      .cont_lows{
+        display:flex;
+        justify-content: end;
+        gap:8px;
+        align-items: center;
+      }
+      .title_lows{
+        font-size: 16px;
+        color:grey;
+      }
   }
 
   @media screen and (min-width:1158px){
@@ -136,6 +157,16 @@
         justify-content: center;
         gap:15px;
        
+      }
+      .cont_lows{
+        display:flex;
+        justify-content: end;
+        gap:8px;
+        align-items: center;
+      }
+      .title_lows{
+        font-size: 16px;
+        color:grey;
       }
 
   }
