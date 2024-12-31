@@ -10,8 +10,11 @@ import AboutMe from '../../pages/AboutMe/AboutMe.jsx';
 import MoreInfo from '../MoreInfo/MoreInfo.jsx';
 import Details from '../../pages/Details/Details.jsx';
 import { LuSunMoon } from 'react-icons/lu';
+import clsx from 'clsx';
 export const ThemeContext=createContext();
-
+const buildLinkClass = ({ isActive }) => {
+  return clsx(s.first, isActive && s.active);
+};
 
 const Header = () => {
 
@@ -65,9 +68,9 @@ setTheme((curr)=>curr==="light"? "dark": "light");
         <div className={s.container_tab_desk}>
         <button className={s.btn_moon} onClick={ToogleTheme}  ><LuSunMoon className={s.moon} color="black" size="40px" /></button>
             <nav className={s.list}>
-                <NavLink to='/' className={s.items}>About me</NavLink>
-                <NavLink to ='/projects'className={s.items}>Projects</NavLink>
-                <NavLink to='/contact' className={s.items}>Contact</NavLink>
+                <NavLink  to='/' className={buildLinkClass}>About me</NavLink>
+                <NavLink  to ='/projects'className={buildLinkClass}>Projects</NavLink>
+                <NavLink  to='/contact' className={buildLinkClass}>Contact</NavLink>
             </nav>
         </div>
         <Routes>

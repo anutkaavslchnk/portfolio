@@ -1,3 +1,21 @@
+
+
+.first {
+  color: black;
+  text-decoration: none;
+  animation: titleAnim 6s ease forwards;
+  opacity: 0;
+  font-weight: 700;
+}
+
+
+
+.active {
+ text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+
 .dark .burder_items{
   border-color:white;
 }
@@ -10,7 +28,7 @@
 .dark .moon{
 stroke:white;
 }
-.dark .items{
+.dark .first{
   color:white;
 }
 .dark .moon_mobile{
@@ -27,7 +45,10 @@ gap:9px;
     border: 1.6px solid rgb(33, 36, 61);
     width: 30px;
 }
-
+.decorated{
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
 .btn_header{
     border:none;
     background-color: transparent;
