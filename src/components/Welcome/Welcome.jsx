@@ -12,6 +12,7 @@ const Welcome = () => {
 
   return (
     <>
+    
       {isStart && <Header />}
 
       {!isStart && (

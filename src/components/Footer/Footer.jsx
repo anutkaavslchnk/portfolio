@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
       <div className={s.cont_lows}>
       <PiCopyrightLight color="grey" size="20px"/>
-        <p className={s.title_lows}>2024</p>
+        <p className={s.title_lows}>2025</p>
         <p className={s.title_lows}>All Rights Reserved.</p>
       </div>
       </footer>

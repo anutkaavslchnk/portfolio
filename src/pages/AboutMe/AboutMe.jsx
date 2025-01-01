@@ -1,6 +1,6 @@
 import s from './AboutMe.module.css';
 import photoMy from '/public/main.jpeg';
-import resume from '/public/Anna_Vasylchenko_FronendDev.pdf';
+import resume from '/public/cv.pdf';
 import { Link,  Outlet } from 'react-router-dom';
 import { useContext, useState } from 'react';
 // 
