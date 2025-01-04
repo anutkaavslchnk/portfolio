@@ -18,7 +18,7 @@ const Welcome = () => {
       {!isStart && (
         <div className={s.container}>
           <div className={s.welcome}>
-            <h2 className={s.begin}>Welcome to my portfolio 🦹</h2>
+            <h2 className={s.begin}>ANNA VASYLCHENKO 🤍 </h2>
           </div>
           <div className={s.some_words}>
             <div className={s.content}>
