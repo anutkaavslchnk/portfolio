@@ -25,7 +25,7 @@ const projectsData = [
     description: 'In this web application, you will have the opportunity to create your own account in the contact book, where you can add new contacts, delete them, and search by number and name. Individual project',
     skills: '·React.js ·Node.js ·Redux ·Axios ·Vite',
       github:"https://github.com/anutkaavslchnk/Phone-book-app",
-    site:"https://goit-react-hw-08-black-chi.vercel.app/"
+    site:"https://phone-book-app-lime.vercel.app/"
   },
   {
     id: 3,
