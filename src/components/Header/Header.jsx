@@ -48,8 +48,8 @@ setTheme((curr)=>curr==="light"? "dark": "light");
 
   return (
     <ThemeContext.Provider value={{theme, ToogleTheme}}>
-
-<header className={`${s.header} ${theme === 'dark' ? s.dark : ''}`}>
+<div className={theme === 'dark' ? s.dark : ''}>
+<header className={s.header}>
 
        
         
@@ -73,7 +73,13 @@ setTheme((curr)=>curr==="light"? "dark": "light");
                 <NavLink  to='/contact' className={buildLinkClass}>Contact</NavLink>
             </nav>
         </div>
-        <Routes>
+
+   
+        
+{isOpen && <Modal close={handleClose}></Modal> }
+
+  </header>
+  <Routes>
     <Route path="/" element={<AboutMe/>}>
     <Route path="/moreInfo" element={<MoreInfo/>}></Route>
     </Route>
@@ -83,11 +89,7 @@ setTheme((curr)=>curr==="light"? "dark": "light");
       <Route path="/contact" element={<Contact/>}></Route>
       <Route path="*" element={<NotFound />} />
     </Routes>
-   
-        
-{isOpen && <Modal close={handleClose}></Modal> }
-
-  </header>
+  </div>
   </ThemeContext.Provider>
   )
 };

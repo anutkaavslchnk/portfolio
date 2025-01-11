@@ -1,6 +1,9 @@
 .dark body{
     background-color: black;
 }
+.dark{
+    background-color: black;
+}
 .dark .contacts{
     color:white;
 }

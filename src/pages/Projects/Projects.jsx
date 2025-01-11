@@ -1,6 +1,6 @@
 import s from './Projects.module.css';
 import img1 from '/public/tp.png';
-import img2 from '/public/fb2.png';
+import img2 from '/public/fb3.png';
 import img3 from '/public/js.png';
 import img4 from '/public/fr.png';
 import img5 from '/public/st.png';
