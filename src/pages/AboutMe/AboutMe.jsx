@@ -6,9 +6,9 @@ import { useContext, useState } from 'react';
 // 
 import symbolDefs from '/public/symbol-defs.svg';
 
-
 import Footer from '../../components/Footer/Footer';
 import { ThemeContext } from '../../components/Header/Header.jsx';
+import FIcons from '../../components/FIcons/FIcons.jsx';
 
 console.log(s);
 
@@ -118,6 +118,8 @@ const AboutMe = () => {
   <li><svg className={s.svg}><use href={`${symbolDefs}#icon-code_development_logo_nodejs_icon`}/></svg></li>
   <li><svg className={s.svg}><use href={`${symbolDefs}#icon-icons8-express-js`}/></svg></li>
   <li><svg className={s.svg}><use href={`${symbolDefs}#icon-mongodb-ar21`}/></svg></li>
+  <li><svg className={s.svg}><use href={`${symbolDefs}#next-js`}/></svg></li>
+  <li><svg className={s.svg}><use href={`${symbolDefs}#sass`}/></svg></li>
   </ul>
   </div>
 </div>
@@ -168,7 +170,7 @@ const AboutMe = () => {
 
     
       </section>
-
+      <FIcons />
     </main>
 
     <Footer></Footer>

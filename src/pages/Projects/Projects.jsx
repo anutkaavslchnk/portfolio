@@ -8,6 +8,7 @@ import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom'; 
 import Footer from '../../components/Footer/Footer';
 import { ThemeContext } from '../../components/Header/Header';
+import FIcons from '../../components/FIcons/FIcons';
 
 const Projects = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -103,7 +104,9 @@ const {theme}=useContext(ThemeContext);
           </button>
         ))}
       </div>
+      <FIcons></FIcons>
     </section>
+
     <Footer></Footer>
     </div>
   );
