@@ -1,7 +1,7 @@
 body {
   font-family: "Heebo", sans-serif;
   line-height: 1.5;
-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 h1,
@@ -40,11 +40,10 @@ body.dark p,
 body.dark a {
   color: white;
 }
-body.dark li{
+body.dark li {
   background-color: black;
-  border:1px solid white;
+  border: 1px solid white;
 }
-.body.dark button{
-  border:1px solid white;
+.body.dark button {
+  border: 1px solid white;
 }
-

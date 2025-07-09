@@ -1,81 +1,78 @@
-.dark body{
+.dark body {
+  background-color: black;
+}
+.dark {
+  background-color: black;
+}
+body.dark {
+  background-color: black;
+}
+.dark .contacts {
+  color: white;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.order {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.contacts {
+  margin-top: 50px;
+  font-size: 20px;
+  text-align: center;
+}
+.item {
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+
+  background-color: black;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.itemlast {
+  width: 20px;
+  height: 20px;
+}
+.icon {
+  fill: white;
+}
+
+@media screen and (min-width: 768px) {
+  .item {
+    width: 60px;
+    height: 60px;
+
     background-color: black;
-}
-.dark{
-    background-color: black;
-}
-.dark .contacts{
-    color:white;
-}
-
-.list{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    gap:20px;
-    margin-top: 30px;
-}
-.order{
-    font-size:20px;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 10px;
-}
-.contacts{
-    margin-top: 50px;
-    font-size:20px;
-    text-align: center;
-}
-.item{
-    position: relative; 
-    border-radius:50%;
-    border:1px solid black;
-    width:50px;
-    height:50px;
-   
-    background-color: black;
-}
-.icon{
-    width:30px;
-height:30px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.itemlast{
-width:20px;
-height:20px;
-}
-.icon{
-    fill:white;
+  }
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+  .itemlast {
+    width: 30px;
+    height: 30px;
+  }
+  .icon {
+    fill: white;
+  }
 }
 
-
-
-@media screen and (min-width:768px){
-    .item{
-
-        width:60px;
-        height:60px;
-       
-        background-color: black;
-    }
-    .icon{
-        width:40px;
-    height:40px;
- 
-    }
-    .itemlast{
-    width:30px;
-    height:30px;
-    }
-    .icon{
-        fill:white;
-    }
-}
-
-
-@media screen and (min-width:1158px){
-
+@media screen and (min-width: 1158px) {
 }
