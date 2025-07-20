@@ -6,7 +6,7 @@ h2 {
   color: white;
   opacity: 0;
   font-size: 30px;
-  animation: titleAnim 6s ease forwards;
+  animation: titleAnim 4s ease forwards;
 }
 
 .welcome {
