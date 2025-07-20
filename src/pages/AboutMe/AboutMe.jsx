@@ -44,7 +44,7 @@ const AboutMe = () => {
             <Outlet></Outlet>
 
             <a
-              href="https://drive.google.com/file/d/1qRciNOvHqTLvX62CEHwt3Q9Z7YlMn_B6/view?usp=sharing"
+              href="https://drive.google.com/file/d/1xiBZZl-hsCgXWLHDM_ks78b2eTttynCU/view?usp=sharing"
               target="_blank"
               className={s.btn}
             >
