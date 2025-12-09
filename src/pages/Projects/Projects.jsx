@@ -1,9 +1,6 @@
 import s from "./Projects.module.css";
-import img1 from "/public/tp.png";
-import img2 from "/public/fb3.png";
-import img3 from "/public/js.png";
-import img4 from "/public/fr.png";
-import img5 from "/public/st.png";
+import img1 from "/public/send.png";
+
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
@@ -18,22 +15,12 @@ const Projects = () => {
     {
       id: 1,
       img: img1,
-      title: "Task Pro",
-      year: "2024",
-      type: "Web app",
-      description: "A team project. An app that will help you plan your day...",
-      skills: "·React.js ·Node.js ·MongoDB ·Vite ·Render ·Redux ·REST API",
-    },
-
-    {
-      id: 3,
-      img: img3,
-      title: "Your energy",
-      year: "2023",
+      title: "SENDYKUS",
+      year: "2025",
       type: "Web app",
       description:
-        "Team project. This site will help you create your own workout program...",
-      skills: "·HTML5 ·CSS3 ·JavaScript ·Vite ·Communication ·Teamwork",
+        "SENDYKUS a is a real-time chat application designed to enable instant and seamless communication between users...",
+      skills: "·React.js ·Node.js ·MongoDB ·Socket.io ·Redux ·REST API",
     },
   ];
 
