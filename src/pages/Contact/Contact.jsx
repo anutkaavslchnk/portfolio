@@ -28,16 +28,6 @@ const Contact = () => {
               <FaLinkedin className={s.icon} fill="black" />
             </a>
           </li>
-          <li className={s.item}>
-            <a href="https://wa.me/+48783785560" target="_blank">
-              <FaWhatsapp className={s.icon} fill="black" />
-            </a>
-          </li>
-          <li className={s.item}>
-            <a href="mailto: anna.vasylchenko2006@gmail.com" target="_blank">
-              <BiLogoGmail className={s.icon} fill="black" />
-            </a>
-          </li>
         </ul>
       </section>
     </div>

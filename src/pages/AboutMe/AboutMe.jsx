@@ -27,24 +27,23 @@ const AboutMe = () => {
             <h2 className={s.name}>
               Hi, I am Anna,
               <br />
-              Fullstack Web Developer
+              Fullstack Engineer
             </h2>
             <p className={s.par}>
-              I'm a fullstack web developer with knowledge of HTML, CSS,
-              Javascript, React, Typescript and Node.js. I am currently a
-              student at Adam Mickiewicz University.
+              I’m a Fullstack Engineer with a focus on AI-powered applications
+              and cloud technologies. I have experience building modern
+              applications using React, Redux, TypeScript, REST APIs, Python,
+              Docker, and Recharts, as well as developing and deploying
+              solutions with AWS services including Amplify, Lambda, S3,
+              DynamoDB, RDS, ECR, CloudWatch, CDK, and Amazon Bedrock. I’m
+              currently a student at Adam Mickiewicz University, continuously
+              developing my expertise in full-stack engineering, artificial
+              intelligence, and cloud computing.
             </p>
-            <Link
-              to={showMoreInfo ? "/" : "/moreInfo"}
-              className={s.moreinfo}
-              onClick={handleMore}
-            >
-              {showMoreInfo ? "Hide" : "More information"}
-            </Link>
             <Outlet></Outlet>
 
             <a
-              href="https://drive.google.com/file/d/1MkYp7sTl_Mc8rIY5dLIDH1RWVpVOH10K/view?usp=sharing"
+              href="https://drive.google.com/file/d/1ygaEsxLYvHmLRa2TQ5LJCbmfVAZfCEAM/view?usp=sharing"
               target="_blank"
               className={s.btn}
             >

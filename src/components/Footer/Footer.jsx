@@ -54,29 +54,11 @@ const Footer = () => {
                 />
               </a>
             </li>
-            <li className={s.item_contacts}>
-              <a href="https://wa.me/+48783785560" target="_blank">
-                <FaWhatsapp
-                  className={s.icon_contacts}
-                  fill="white"
-                  size="40px"
-                />
-              </a>
-            </li>
-            <li className={s.item_contacts}>
-              <a href="mailto: anna.vasylchenko2006@gmail.com" target="_blank">
-                <BiLogoGmail
-                  className={s.icon_contacts}
-                  fill="white"
-                  size="40px"
-                />
-              </a>
-            </li>
           </ul>
         </div>
         <div className={s.cont_lows}>
           <PiCopyrightLight color="grey" size="20px" />
-          <p className={s.title_lows}>2025</p>
+          <p className={s.title_lows}>2026</p>
           <p className={s.title_lows}>All Rights Reserved.</p>
         </div>
       </footer>
