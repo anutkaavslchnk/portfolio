@@ -1,0 +1,188 @@
+.section {
+  width: 328px;
+  margin: 0 auto;
+  padding: 44px 0 80px;
+}
+
+.cont_first,
+.cont_second {
+  display: flex;
+  flex-direction: column;
+}
+
+.cont_first {
+  gap: 14px;
+}
+
+.back {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.eyebrow {
+  margin-top: 20px;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0;
+  color: #21243d;
+  font-size: 1.8rem;
+  line-height: 1.1;
+}
+
+.img {
+  width: 100%;
+  max-width: 520px;
+  height: 280px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 12px 32px rgba(33, 36, 61, 0.1);
+}
+
+.cont_second {
+  gap: 12px;
+  max-width: 680px;
+  margin-top: 28px;
+}
+
+.year {
+  width: fit-content;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: #21243d;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.type {
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.desc,
+.list,
+.txt {
+  color: #21243d;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.desc {
+  margin-top: 10px;
+}
+
+.skills {
+  margin-top: 8px;
+  color: #21243d;
+  font-weight: 800;
+}
+
+.list {
+  margin: 0;
+}
+
+.cont {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.github,
+.site {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #21243d;
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.github:hover,
+.site:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.cont:last-child {
+  margin-top: -8px;
+}
+
+.txt {
+  width: 44px;
+  color: #6b7280;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.dark .title,
+.dark .desc,
+.dark .list,
+.dark .skills {
+  color: #ffffff;
+}
+
+.dark .type,
+.dark .txt {
+  color: #b9bdc9;
+}
+
+.dark .back,
+.dark .github,
+.dark .site {
+  border-color: #303030;
+  background: #1b1b1b;
+  color: #ffffff;
+}
+
+.dark .back {
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .section {
+    width: 600px;
+  }
+
+  .section {
+    padding-top: 64px;
+  }
+
+  .cont_second {
+    margin-top: 24px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1158px) {
+  .section {
+    width: 760px;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 327px) {
+    .section {
+      width: calc(100vw - 32px);
+    }
+  }
+}

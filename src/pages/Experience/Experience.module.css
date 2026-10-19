@@ -1,0 +1,229 @@
+.dark {
+  background: #000000;
+}
+
+.page {
+  width: 328px;
+  margin: 0 auto;
+  padding: 40px 0 64px;
+}
+
+.heading {
+  max-width: 600px;
+  margin-bottom: 32px;
+}
+
+.eyebrow {
+  margin-bottom: 8px;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.heading h1 {
+  margin: 0 0 14px;
+  color: #000000;
+  font-size: 2rem;
+  line-height: 1.05;
+}
+
+.intro {
+  max-width: 58ch;
+  color: #6b7280;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.timeline {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  padding: 18px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(33, 36, 61, 0.08);
+}
+
+.cardTop {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.roleHeading {
+  min-width: 0;
+}
+
+.roleHeading h2 {
+  margin: 0 0 8px;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.35;
+  opacity: 1;
+  transform: none;
+  animation: none;
+}
+
+.company,
+.meta {
+  color: #6b7280;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.company {
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+.metaLabel {
+  color: #21243d;
+  font-weight: 700;
+}
+
+.present {
+  align-self: flex-start;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: #dff5f7;
+  color: #25636a;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.summary {
+  margin: 18px 0 12px;
+  color: #21243d;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.responsibilities {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding-left: 20px;
+  color: #21243d;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.responsibilities li::marker {
+  color: var(--accent);
+}
+
+.stack {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #e0e0e0;
+  color: #6b7280;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.stack strong {
+  color: #21243d;
+}
+
+.dark .heading h1,
+.dark .roleHeading h2 {
+  color: #ffffff;
+}
+
+.dark .intro,
+.dark .company,
+.dark .meta,
+.dark .stack {
+  color: #b9bdc9;
+}
+
+.dark .metaLabel,
+.dark .summary,
+.dark .responsibilities,
+.dark .stack strong {
+  color: #ffffff;
+}
+
+.dark .card {
+  border-color: #303030;
+  background: #111111;
+  box-shadow: none;
+}
+
+.dark .stack {
+  border-top-color: #303030;
+}
+
+.dark .present {
+  background: #1e484b;
+  color: #b8eff2;
+}
+
+@media (min-width: 768px) {
+  .page {
+    width: 600px;
+    padding-top: 48px;
+  }
+
+  .card {
+    padding: 24px;
+  }
+
+  .cardTop {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .roleHeading {
+    flex: 1;
+  }
+
+  .present {
+    flex: none;
+  }
+
+  .heading h1 {
+    font-size: 2.5rem;
+  }
+
+  .roleHeading h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1158px) {
+  .page {
+    width: 850px;
+    padding-top: 56px;
+  }
+
+  .heading h1 {
+    font-size: 3rem;
+  }
+
+  .roleHeading h2 {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 327px) {
+  .page {
+    width: calc(100vw - 32px);
+  }
+}
