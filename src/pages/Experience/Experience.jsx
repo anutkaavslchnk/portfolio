@@ -7,33 +7,44 @@ import s from "./Experience.module.css";
 const roles = [
   {
     period: "Feb 2026 - Present · 9 mos",
-    company: "Wydział Matematyki i Informatyki UAM",
-    location: "Poznań, Wielkopolskie, Poland · Hybrid",
-    title: "Python Software Engineer | Application Support and Development Laboratory",
+    company: "Faculty of Mathematics and Computer Science of UAM",
+    location: "Poznań, Poland · Hybrid",
+    title:
+      "Python Software Engineer | Application Support and Development Laboratory",
     summary:
       "Developing a web application for academic course planning and teaching workload management at Adam Mickiewicz University in Poznań.",
     responsibilities: [
-      "Designing and extending data models using Django ORM.",
-      "Implementing class-based views (CBVs) and business logic.",
-      "Developing HTML templates using Django Template Language and HTMX.",
-      "Managing database schema changes and data migrations.",
-      "Implementing functionality for managing academic staff, courses, study programmes, student groups, and teaching workloads.",
-      "Implementing authentication and access control mechanisms.",
+      "Built course assignment functionality, enabling program coordinators to assign academic staff to course groups and manage teaching workloads.",
+      "Automated teaching workload calculations based on assigned classes.",
+      "Created individual workload reports providing detailed insights into employees' assigned courses across different study programs.",
+      "Prototyped application interfaces in Figma and implemented them in the web application.",
+      "Structured and extended database models using Django ORM to manage academic staff, courses, study programs and assignments.",
+      "Configured authentication and role-based access control mechanisms.",
+      "Implemented multilingual support using Django's internationalization.",
+      "Collaborated with 8+ end users, including program coordinators, academic schedulers, a Vice-Dean and administrative staff, to gather feedback and improve application functionality and usability.",
     ],
     stack: "Python, Django, PostgreSQL, Docker, HTMX, Django ORM",
   },
   {
     period: "Jul 2024 - Present · 2 yrs 4 mos",
-    company: "NDA",
+    company: "Startup",
     location: "Dublin, Ireland · Remote",
     title: "Fullstack AI Engineer",
-    summary: "Building AI-powered products as part of a five-person Agile team.",
+    summary:
+      "Data Analytics website to visualise and automate BI processes using AI chat assistants",
     responsibilities: [
-      "Collaborating with five team members through Slack and Jira.",
-      "Developing responsive interfaces and data visualisations.",
-      "Connecting frontend experiences with REST APIs and cloud services.",
+      "Built responsive UI components and optimized interactive data visualizations for an AI-powered BI platform using React, TypeScript, Redux, and Recharts, reducing chart loading times by 50% when processing large datasets.",
+      "Created two specialized AI agents: a data analyst for answering questions about uploaded datasets and a data visualization agent for generating charts on demand.",
+      "Implemented a secure python code interpreter to execute data analysis while protecting users' private data from direct exposure to LLMs.",
+      "Designed MCP tools and contributed to AI agent orchestration.",
+      "Integrated LSTM capabilities and ML models into AI assistants to enable advanced dataset analysis.",
+      "Engineered REST API endpoints for managing liveboards, charts, datasets and AI assistants, connecting frontend components with backend services in AWS infrastructure.",
+      "Wrote unit tests for React components and application logic using Jest.",
+      "Migrated from Amplify to CDK saving 100% on deployments.",
+      "Introduced caching of the AI requests to generate metadata for files having the same or similar schema by only sending the delta to AI (as a result we can upload thousands of files recurrently with no cost).",
     ],
-    stack: "React, Redux, Recharts, TypeScript, REST API, AWS (Amplify)",
+    stack:
+      "React, Redux, Recharts, TypeScript, REST API, AWS (Lambda, S3, DynamoDB, RDS, ECR, CloudWatch, CDK,  Amazon Bedrock, AgentCore), Python, Docker",
   },
 ];
 
