@@ -7,9 +7,11 @@ import s from "./Experience.module.css";
 const roles = [
   {
     period: "Feb 2026 - Present · 9 mos",
-    company: "Wydział Matematyki i Informatyki UAM",
-    location: "Poznań, Wielkopolskie, Poland · Hybrid",
-    title: "Python Software Engineer | Application Support and Development Laboratory",
+    company:
+      "Faculty of Mathematics and Computer Science of UAM",
+    location: "Poznań, Poland · Hybrid",
+    title:
+      "Python Software Engineer | Application Support and Development Laboratory",
     summary:
       "Developing a web application for academic course planning and teaching workload management at Adam Mickiewicz University in Poznań.",
     responsibilities: [
@@ -27,13 +29,21 @@ const roles = [
     company: "NDA",
     location: "Dublin, Ireland · Remote",
     title: "Fullstack AI Engineer",
-    summary: "Building AI-powered products as part of a five-person Agile team.",
+    summary:
+      "Data Analytics Website to visualise and automate BI processes using AI chat assistants",
     responsibilities: [
-      "Collaborating with five team members through Slack and Jira.",
-      "Developing responsive interfaces and data visualisations.",
-      "Connecting frontend experiences with REST APIs and cloud services.",
+      "Developed responsive UI and interactive data visualizations for an AI-powered BI platform.",
+      "Wrote unit tests for React components and application logic using Jest.",
+      "Connected frontend application with backend services and AWS cloud infrastructure.",
+      "Developed two specialized AI agents: a data analyst to answer questions about uploaded data, and a data visualization agent to generate charts on demand.",
+      "Integrated a secure Python Code Interpreter to run data analysis safely behind the scenes, protecting users' private data from being directly exposed to the AI model.",
+      "Implemented LSTM capabilities for AI assistants.",
+      "Developed MCP tools and contributed to AI agent orchestration.",
+      "Integrated ML models to let users run advanced analysis on their uploaded datasets.",
+      "Developed REST API endpoints for liveboards, charts, datasets, and AI assistants.",
     ],
-    stack: "React, Redux, Recharts, TypeScript, REST API, AWS (Amplify)",
+    stack:
+      "React, Redux, Recharts, Typescript, REST API, AWS (Amplify, Lambda, S3, DynamoDB, RDS, ECR, CloudWatch, CDK, Amazon Bedrock), Python, Docker",
   },
 ];
 

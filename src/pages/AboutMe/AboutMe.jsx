@@ -65,15 +65,14 @@ const AboutMe = () => {
             <h2 className={s.name}>
               Hi, I am Anna,
               <br />
-              Fullstack Engineer
+              Fullstack AI Engineer
             </h2>
             <p className={s.par}>
-              I’m a Fullstack Engineer with a focus on AI-powered applications
+              I’m a Fullstack AI Engineer with a focus on AI-powered applications
               and cloud technologies. I have experience building modern
               applications using React, Redux, TypeScript, REST APIs, Python,
               Docker, and Recharts, as well as developing and deploying
-              solutions with AWS services including Amplify, Lambda, S3,
-              DynamoDB, RDS, ECR, CloudWatch, CDK, and Amazon Bedrock. I’m
+              solutions with AWS services. I’m
               currently a student at Adam Mickiewicz University, continuously
               developing my expertise in full-stack engineering, artificial
               intelligence, and cloud computing.
